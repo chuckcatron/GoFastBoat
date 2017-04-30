@@ -1,0 +1,44 @@
+﻿<div id="rebateForm">
+    <!--Header-->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-header">Add/Edit&nbsp;<span data-bind="text: DepartmentDescription"></span>&nbsp;Time-based Purchases</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div>
+                <p class="instructions">(<span class="fa fa-asterisk"></span>Required Field)</p>
+            </div>
+        </div>
+    </div>
+    <!--End Header-->
+    <div id="form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label>EP Id's&nbsp;<span class="fa fa-asterisk"></span></label>
+                        <div style="position: relative">
+                            <input type="file"
+                                   data-role="upload"
+                                   data-multiple="false"
+                                   data-show-file-list="true"
+                                   data-localization="{select: 'EP Id List...'}"
+                                   data-async="{ saveUrl: 'Upload/SaveFile', removeUrl: 'Upload/RemoveFile', autoUpload: true }"
+                                   data-bind="events: { select: fileModel.epFileSelected, success: fileModel.epComplete }" />
+                        </div>
+                    </div>
+                </div></div></div></div>
+            </div>
+            <!--Errors-->
+            <div class="row errors">
+                <div class="col-md-8">
+                    <div id="errors"></div>
+                </div>
+            </div>
+            <!--End Errors-->
+            <div class="row">
+                <div class="col-md-12"><hr /></div>
+            </div>
+        </div>

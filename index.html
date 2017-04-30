@@ -1,0 +1,1109 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Smarty - Multipurpose + Admin</title>
+    <meta name="keywords" content="HTML5,CSS3,Template" />
+    <meta name="description" content="" />
+    <meta name="Author" content="Chuck Catron [www.chilidevelopment.com]" />
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link href="assets/plugins/slider.revolution.v5/css/pack.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto%3A400%2C100%2C300%2C500%2C700%2C900" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+    <link href="http://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+    <link href="http://fonts.googleapis.com/css?family=BenchNine%3A700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto%3A500" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+
+    <!-- THEME CSS -->
+    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+</head>
+
+<!--
+    AVAILABLE BODY CLASSES:
+
+    smoothscroll 			= create a browser smooth scroll
+    enable-animation		= enable WOW animations
+
+    bg-grey					= grey background
+    grain-grey				= grey grain background
+    grain-blue				= blue grain background
+    grain-green				= green grain background
+    grain-blue				= blue grain background
+    grain-orange			= orange grain background
+    grain-yellow			= yellow grain background
+
+    boxed 					= boxed layout
+    pattern1 ... patern11	= pattern background
+    menu-vertical-hide		= hidden, open on click
+
+    BACKGROUND IMAGE [together with .boxed class]
+    data-background="assets/images/boxed_background/1.jpg"
+-->
+<body class="smoothscroll enable-animation">
+
+    <!-- wrapper -->
+    <div id="wrapper">
+        <!--
+            AVAILABLE HEADER CLASSES
+
+            Default nav height: 96px
+            .header-md 		= 70px nav height
+            .header-sm 		= 60px nav height
+
+            .noborder 		= remove bottom border (only with transparent use)
+            .transparent	= transparent header
+            .translucent	= translucent header
+            .sticky			= sticky header
+            .static			= static header
+            .dark			= dark header
+            .bottom			= header on bottom
+
+            shadow-before-1 = shadow 1 header top
+            shadow-after-1 	= shadow 1 header bottom
+            shadow-before-2 = shadow 2 header top
+            shadow-after-2 	= shadow 2 header bottom
+            shadow-before-3 = shadow 3 header top
+            shadow-after-3 	= shadow 3 header bottom
+
+            .clearfix		= required for mobile menu, do not remove!
+
+            Example Usage:  class="clearfix sticky header-sm transparent noborder"
+        -->
+        <div id="header" class="clearfix">
+            <!-- SEARCH HEADER -->
+            <div class="search-box over-header">
+                <a id="closeSearch" href="#" class="glyphicon glyphicon-remove"></a>
+                <form action="page-search-result-1.html" method="get">
+                    <input type="text" class="form-control" placeholder="SEARCH" />
+                </form>
+            </div>
+            <!-- /SEARCH HEADER -->
+            <!-- TOP NAV -->
+            <header id="topNav">
+                <div class="container">
+                    <!-- Mobile Menu Button -->
+                    <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- BUTTONS -->
+                    <ul class="pull-right nav nav-pills nav-second-main">
+                        <!-- SEARCH -->
+                        <li class="search">
+                            <a href="javascript:;">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <!-- /SEARCH -->
+                    </ul>
+                    <!-- /BUTTONS -->
+                    <!-- Logo -->
+                    <a class="logo pull-left" href="index.html">
+                        <img src="assets/images/gofastboat.com/gofastboat-com-logo.png" alt="" />
+                    </a>
+
+                    <!--
+                        Top Nav
+
+                        AVAILABLE CLASSES:
+                        submenu-dark = dark sub menu
+                    -->
+                    <div class="navbar-collapse pull-right nav-main-collapse collapse submenu-dark">
+                        <nav class="nav-main">
+
+                            <!--
+                                NOTE
+
+                                For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                                Direct Link Example:
+
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                            -->
+                            <ul id="topMain" class="nav nav-pills nav-main">
+                                <li class="dropdown active">
+                                    <!-- HOME -->
+                                    <a class="dropdown-toggle" href="#">
+                                        HOME
+                                    </a>
+                                 </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                </div>
+            </header>
+            <!-- /Top Nav -->
+        </div>
+
+
+        <!-- START REVOLUTION SLIDER 5.3.0 fullwidth mode -->
+        <div id="rev_slider_647_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="car-dealership" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <div id="rev_slider_647_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-1950"
+                        data-transition="slideremovehorizontal"
+                        data-slotamount="default"
+                        data-hideafterloop="0"
+                        data-hideslideonmobile="off"
+                        data-easein="Power1.easeInOut"
+                        data-easeout="Power1.easeInOut"
+                        data-masterspeed="800"
+                        data-thumb="assets/images/gofastboat.com/wake-100x50.jpg"
+                        data-rotate="0"
+                        data-fstransition="fade"
+                        data-fsmasterspeed="800"
+                        data-fsslotamount="7"
+                        data-saveperformance="off"
+                        data-title="Slide"
+                        data-param1=""
+                        data-param2=""
+                        data-param3=""
+                        data-param4=""
+                        data-param5=""
+                        data-param6=""
+                        data-param7=""
+                        data-param8=""
+                        data-param9=""
+                        data-param10=""
+                        data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/1x1.png" alt=""
+                             data-lazyload="assets/images/gofastboat.com/wake.jpg"
+                             data-bgposition="center center"
+                             data-bgfit="cover"
+                             data-bgrepeat="no-repeat"
+                             data-bgparallax="5" class="rev-slidebg"
+                             data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1950-layer-1"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['50','40','30','20']"
+                             data-lineheight="['70','60','50','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">Pure Power. Masterful Engineering.</div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1950-layer-2"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['110','100','90','65']"
+                             data-fontsize="['30','30','20','15']"
+                             data-lineheight="['50','50','40','30']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 50px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">We have the latest Donzi boats</div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1950-layer-3"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['bottom','bottom','bottom','bottom']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['40','30','20','20']"
+                             data-lineheight="['60','50','40','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:150;e:Power1.easeInOut;"
+                             data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 0, 0, 0.65);"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;cursor:pointer;"><i class="fa-icon-angle-double-right" style="color:#d50000;"></i>Test Drive Now</div>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-1951"
+                        data-transition="slideremovehorizontal"
+                        data-slotamount="default"
+                        data-hideafterloop="0"
+                        data-hideslideonmobile="off"
+                        data-easein="Power1.easeInOut"
+                        data-easeout="Power1.easeInOut"
+                        data-masterspeed="800"
+                        data-thumb="assets/images/gofastboat.com/stock-photo-motor-boat-rio-yachts-best-italian-yacht-211491340-100x50.jpg"
+                        data-rotate="0"
+                        data-saveperformance="off"
+                        data-title="Slide"
+                        data-param1=""
+                        data-param2=""
+                        data-param3=""
+                        data-param4=""
+                        data-param5=""
+                        data-param6=""
+                        data-param7=""
+                        data-param8=""
+                        data-param9=""
+                        data-param10=""
+                        data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/1x1.png" alt=""
+                             data-lazyload="assets/images/gofastboat.com/stock-photo-motor-boat-rio-yachts-best-italian-yacht-211491340.jpg"
+                             data-bgposition="center center"
+                             data-bgfit="cover"
+                             data-bgrepeat="no-repeat"
+                             data-bgparallax="5" class="rev-slidebg"
+                             data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1951-layer-1"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['50','40','30','20']"
+                             data-lineheight="['70','60','50','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">Make an Impression.</div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1951-layer-2"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['110','100','90','65']"
+                             data-fontsize="['30','30','20','15']"
+                             data-lineheight="['50','50','40','30']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 50px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">Cars for every Budget</div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1951-layer-3"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['bottom','bottom','bottom','bottom']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['40','30','20','20']"
+                             data-lineheight="['60','50','40','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:150;e:Power1.easeInOut;"
+                             data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 0, 0, 0.65);"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;cursor:pointer;"><i class="fa-icon-angle-double-right" style="color:#d50000;"></i>Start the Experience</div>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-1952"
+                        data-transition="slideremovehorizontal"
+                        data-slotamount="default"
+                        data-hideafterloop="0"
+                        data-hideslideonmobile="off"
+                        data-easein="Power1.easeInOut"
+                        data-easeout="Power1.easeInOut"
+                        data-masterspeed="800"
+                        data-thumb="assets/images/gofastboat.com/stock-photo-cigarette-boats-at-islamorada-451409938-100x50.jpg"
+                        data-rotate="0"
+                        data-saveperformance="off"
+                        data-title="Slide"
+                        data-param1=""
+                        data-param2=""
+                        data-param3=""
+                        data-param4=""
+                        data-param5=""
+                        data-param6=""
+                        data-param7=""
+                        data-param8=""
+                        data-param9=""
+                        data-param10=""
+                        data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/1x1.png" alt=""
+                             data-lazyload="assets/images/gofastboat.com/stock-photo-cigarette-boats-at-islamorada-451409938.jpg"
+                             data-bgposition="center center"
+                             data-bgfit="cover"
+                             data-bgrepeat="no-repeat"
+                             data-bgparallax="5" class="rev-slidebg"
+                             data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1952-layer-1"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['50','40','30','20']"
+                             data-lineheight="['70','60','50','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">Luxurious Interiors.</div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1952-layer-2"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['110','100','90','65']"
+                             data-fontsize="['30','30','20','15']"
+                             data-lineheight="['50','50','40','30']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 50px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">Fully Customizable Extras</div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1952-layer-3"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['bottom','bottom','bottom','bottom']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['40','30','20','20']"
+                             data-lineheight="['60','50','40','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:150;e:Power1.easeInOut;"
+                             data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 0, 0, 0.65);"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;cursor:pointer;"><i class="fa-icon-angle-double-right" style="color:#d50000;"></i>Take a Look</div>
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-1953"
+                        data-transition="slideremovehorizontal"
+                        data-slotamount="default"
+                        data-hideafterloop="0"
+                        data-hideslideonmobile="off"
+                        data-easein="Power1.easeInOut"
+                        data-easeout="Power1.easeInOut"
+                        data-masterspeed="800"
+                        data-thumb="assets/images/gofastboat.com/2005donzi38zr 007-100x50.jpg"
+                        data-rotate="0"
+                        data-saveperformance="off"
+                        data-title="Slide"
+                        data-param1=""
+                        data-param2=""
+                        data-param3=""
+                        data-param4=""
+                        data-param5=""
+                        data-param6=""
+                        data-param7=""
+                        data-param8=""
+                        data-param9=""
+                        data-param10=""
+                        data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/1x1.png" alt=""
+                             data-lazyload="assets/images/gofastboat.com/2005donzi38zr 007.jpg"
+                             data-bgposition="center center"
+                             data-bgfit="cover"
+                             data-bgrepeat="no-repeat"
+                             data-bgparallax="5" class="rev-slidebg"
+                             data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1953-layer-1"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['50','40','30','20']"
+                             data-lineheight="['70','60','50','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">Ready for the Race Track.</div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1953-layer-2"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['110','100','90','65']"
+                             data-fontsize="['30','30','20','15']"
+                             data-lineheight="['50','50','40','30']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 50px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">With the Right Car</div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-1953-layer-3"
+                             data-x="['left','left','left','left']"
+                             data-hoffset="['30','30','30','20']"
+                             data-y="['bottom','bottom','bottom','bottom']"
+                             data-voffset="['30','30','30','20']"
+                             data-fontsize="['40','30','20','20']"
+                             data-lineheight="['60','50','40','40']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-transform_idle="o:1;"
+                             data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:150;e:Power1.easeInOut;"
+                             data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 0, 0, 0.65);"
+                             data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+                             data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+                             data-start="0"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                             data-basealign="slide"
+                             data-responsive_offset="on"
+                             style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;cursor:pointer;"><i class="fa-icon-angle-double-right" style="color:#d50000;"></i>Buckle up Now</div>
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+            </div>
+        </div>
+        <!-- END REVOLUTION SLIDER -->
+        
+        <section>
+            <div class="container">
+
+                <div id="portfolio" class="portfolio-gutter portfolio-title-over">
+                    <ul class="nav nav-pills mix-filter margin-bottom-60">
+                        <li data-filter="all" class="filter active"><a href="#">All</a></li>
+                        <li data-filter="24foot" class="filter"><a href="#">24 Foot</a></li>
+                        <li data-filter="white" class="filter"><a href="#">White</a></li>
+                        <li id="styleSelect">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                Style <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li data-filter="cigarette" class="filter"><a href="#">Cigarette</a></li>
+                                <li data-filter="speedboat" class="filter"><a href="#">Speed Boat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <div class="row mix-grid">
+
+                        <div class="col-md-4 col-sm-4 mix white 24foot cigarette">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-cigarette-boat-513971.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+                                        </span>
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Cigarette Boat</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">White with Blue Flames</a></li>
+                                                <li><a href="#">24 foot</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+                                    </div>
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-cigarette-boat-513971.jpg" width="600" height="399" alt="">
+                                    
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix 24foot speedboat">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-speedboat-cruising-in-the-sea-1298261.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+                                            <a class="ico-rounded lightbox" href="ajax/2009ManitouLegacy24.html" 
+                                               data-lightbox="iframe" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+                                        </span>
+
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Street Photography</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">Photography</a></li>
+                                                <li><a href="#">Design</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+
+                                    </div>
+
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-speedboat-cruising-in-the-sea-1298261.jpg" width="600" height="399" alt="">
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix white 24foot cigarette">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-cigarette-boat-513971.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+                                        </span>
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Cigarette Boat</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">White with Blue Flames</a></li>
+                                                <li><a href="#">24 foot</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+                                    </div>
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-cigarette-boat-513971.jpg" width="600" height="399" alt="">
+
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix white 24foot cigarette">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-cigarette-boat-513971.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+                                        </span>
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Cigarette Boat</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">White with Blue Flames</a></li>
+                                                <li><a href="#">24 foot</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+                                    </div>
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-cigarette-boat-513971.jpg" width="600" height="399" alt="">
+
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix white 24foot">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-cigarette-boat-513971.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+                                        </span>
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Cigarette Boat</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">White with Blue Flames</a></li>
+                                                <li><a href="#">24 foot</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+                                    </div>
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-cigarette-boat-513971.jpg" width="600" height="399" alt="">
+
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix 24foot speedboat">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-speedboat-cruising-in-the-sea-1298261.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+                                        </span>
+
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Street Photography</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">Photography</a></li>
+                                                <li><a href="#">Design</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+
+                                    </div>
+
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-speedboat-cruising-in-the-sea-1298261.jpg" width="600" height="399" alt="">
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix white 24foot">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-cigarette-boat-513971.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+                                        </span>
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Cigarette Boat</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">White with Blue Flames</a></li>
+                                                <li><a href="#">24 foot</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+                                    </div>
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-cigarette-boat-513971.jpg" width="600" height="399" alt="">
+
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix 24foot speedboat">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-speedboat-cruising-in-the-sea-1298261.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+
+                                        </span>
+
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Street Photography</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">Photography</a></li>
+                                                <li><a href="#">Design</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+
+                                    </div>
+
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-speedboat-cruising-in-the-sea-1298261.jpg" width="600" height="399" alt="">
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                        <div class="col-md-4 col-sm-4 mix white 24foot">
+                            <!-- item -->
+
+                            <div class="item-box">
+                                <figure>
+                                    <div class="item-hover">
+                                        <span class="overlay dark-5"></span>
+                                        <span class="inner">
+                                            <!-- lightbox -->
+                                            <a class="ico-rounded lightbox" href="assets/images/gofastboat.com/1200x800/stock-photo-cigarette-boat-513971.jpg" data-plugin-options='{"type":"image"}'>
+                                                <span class="fa fa-plus size-20"></span>
+                                            </a>
+                                            <!-- details -->
+                                            <a class="ico-rounded" href="portfolio-single-slider.html">
+                                                <span class="glyphicon glyphicon-option-horizontal size-20"></span>
+                                            </a>
+                                        </span>
+                                        <!-- overlay title -->
+                                        <div class="item-box-overlay-title">
+                                            <h3>Cigarette Boat</h3>
+                                            <ul class="list-inline categories nomargin">
+                                                <li><a href="#">White with Blue Flames</a></li>
+                                                <li><a href="#">24 foot</a></li>
+                                            </ul>
+                                        </div><!-- /overlay title -->
+                                    </div>
+                                    <img class="img-responsive" src="assets/images/gofastboat.com/600x399/stock-photo-cigarette-boat-513971.jpg" width="600" height="399" alt="">
+
+                                </figure>
+                            </div>
+
+                        </div><!-- /item -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- / -->
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- Footer Logo -->
+                        <p class="lead">Nishwitz Enterprises / GoFastBoat.com</p>
+                        <!-- Contact Address -->
+                        <address>
+                            <ul class="list-unstyled">
+                                <li class="footer-sprite address">
+                                    Warehouse Locations:
+                                    <ul>
+                                        <li>
+                                            Dayton, OH
+                                        </li>
+                                        <li>
+                                            Sarasota, FL
+                                        </li>
+                                        <li>
+                                            Lafollette, TN
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="footer-sprite phone">
+                                    Phone:
+                                    <ul><li>937-239-2604</li></ul>
+                                </li>
+                                <li class="footer-sprite email">
+                                    Email:
+                                    <ul>
+                                        <li>
+                                            <a href="mailto:gofastboatsales@gmail.com">gofastboatsales@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:donzicaptain@yahoo.com">donzicaptain@yahoo.com</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </address>
+                        <!-- /Contact Address -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <ul class="pull-right nomargin list-inline mobile-block">
+                        <li><a href="http://www.chilidevelopment.com">Design and Programming - Chili Development</a></li>
+                    </ul>
+                    &copy; Nishwitz Enterprises
+                </div>
+            </div>
+        </footer>
+        <!-- /FOOTER -->
+
+    </div>
+    <!-- /wrapper -->
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="inner">
+            <span class="loader"></span>
+        </div>
+    </div><!-- /PRELOADER -->
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+    <script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+    <script src="js/core/kendoui/kendo.all.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+
+    <!-- REVOLUTION SLIDER -->
+    <script type="text/javascript" src="assets/plugins/slider.revolution.v5/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider.revolution.v5/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript">
+        var revapi647;
+        jQuery(document).ready(function () {
+            if (jQuery("#rev_slider_647_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_647_1");
+            } else {
+                revapi647 = jQuery("#rev_slider_647_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: plugin_path + "slider.revolution.v5/js/",
+                    sliderLayout: "fullwidth",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 1,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        }
+                        ,
+                        arrows: {
+                            style: "metis",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_onleave: false,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 0,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 0,
+                                v_offset: 0
+                            }
+                        }
+                        ,
+                        bullets: {
+                            enable: true,
+                            hide_onmobile: true,
+                            hide_under: 768,
+                            style: "hermes",
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 30,
+                            space: 5,
+                            tmp: ''
+                        }
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1240, 1024, 778, 480],
+                    gridheight: [650, 600, 550, 450],
+                    lazyType: "smart",
+                    parallax: {
+                        type: "scroll",
+                        origo: "enterpoint",
+                        speed: 400,
+                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+                        type: "scroll",
+                        disable_onmobile: "on"
+                    },
+                    shadow: 0,
+                    spinner: "off",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
