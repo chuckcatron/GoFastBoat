@@ -135,6 +135,7 @@
     <Content Include="assets\css\color_scheme\yellow.css" />
     <Content Include="assets\css\essentials.css" />
     <Content Include="assets\css\header-1.css" />
+    <Content Include="assets\css\layout-shop.css" />
     <Content Include="assets\css\layout.css" />
     <Content Include="assets\fonts\et-line.svg" />
     <Content Include="assets\images\1x1.png" />
@@ -2883,6 +2884,7 @@
     <Content Include="assets\js\app.js" />
     <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\scripts.js" />
+    <Content Include="assets\js\view\demo.shop.js" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.css" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.min.css" />
@@ -3146,6 +3148,7 @@
     <Content Include="assets\plugins\toastr\toastr.css" />
     <Content Include="assets\plugins\toastr\toastr.js" />
     <Content Include="assets\plugins\toastr\WARNING!.txt" />
+    <Content Include="boats\shop-single-full.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
