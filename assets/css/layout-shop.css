@@ -125,14 +125,14 @@ ul.shop-item-list>li.col-md-6:nth-child(2n+1) {
 
 
 
-div.shop-item {
+div.shop-item, span.shop-item {
 	margin-bottom:60px;
 }
 div.shop-item .shop-item-buttons a.btn-default {
 	border:0;
 	background-color:rgba(0,0,0,0.1);
 }
-div.shop-item .shop-item-buttons a.btn-default:hover {
+span.shop-item, div.shop-item .shop-item-buttons a.btn-default:hover {
 	border:0;
 	background-color:rgba(0,0,0,0.18);
 }
@@ -278,14 +278,14 @@ div.shop-item-rating-line:after {
 
 
 /* list item price */
-div.shop-item-price {
+span.shop-item-price, div.shop-item-price {
 	font-size:20px;
 	margin-top:6px;
 	font-weight:bold;
 }
-div.shop-item-price>span {
+div.shop-item-price>h1>span {
 	color:#999;
-	font-size:15px;
+	font-size:inherit;
 	display:inline-block;
 	padding:0 10px;
 	font-weight:400;
