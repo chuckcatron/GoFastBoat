@@ -661,7 +661,7 @@
 							image: {
 								verticalFit: 	true
 							},
-
+                            overflowY: 'scroll',
 							zoom: {
 								enabled: 		false,
 								duration: 		300
