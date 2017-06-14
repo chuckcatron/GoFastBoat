@@ -8,7 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABiNrqOmXDU+WFsZ00TGpywAAAAACAAAAAAAQZgAAAAEAACAAAAB0C50XtwVnprWzH9vYkysKolGevmmF7cIZ2pD/J2/f1QAAAAAOgAAAAAIAACAAAADb8NVycMThY6qhjBkb56al48IHi70h8ITPjEPl0Z8TToAAAABmqNx9Qnip8b3LLsicH7qE/I3j49+bEFckPKujHSu/sEvTN+qmjgdmUMP06bzKEPfzt3/jkN56K559QmGDCUXi4ovWBE1ee/A2G6zU4CMIJIF8xOkxTRnMrSBGT1SislTlsEXHd1TnLQp0k1QplLfvsjVCVrE5zOapKqHSwHOcCEAAAABzGQKbMyacv1vdtAba/vgMzMm8sWkMAOC0LkF+BU1Pp8mKURL+OhYJzBXDh+m/8Xj6U7BzluG+TdX0fTLruOQz</EncryptedPassword>
     <_NewBackgroundProfile>False</_NewBackgroundProfile>
-    <_PublishTargetUrl>ftp://home680695155.1and1-data.host/gofastboat</_PublishTargetUrl>
+    <_PublishTargetUrl>ftp://home680695155.1and1-data.host/gofastboatdev</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ajax/2009ManitouLegacy24.html">
@@ -195,7 +195,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/05/2017 21:16:30</publishTime>
     </File>
     <File Include="assets/images/2005donzi38zr_Full.jpg">
-      <publishTime>05/05/2017 21:17:41</publishTime>
+      <publishTime>05/19/2017 21:10:50</publishTime>
     </File>
     <File Include="assets/images/2005Donzi_38_600x395.jpg">
       <publishTime>05/05/2017 17:55:58</publishTime>
@@ -8667,7 +8667,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/15/2017 08:24:42</publishTime>
     </File>
     <File Include="assets/js/scripts.js">
-      <publishTime>04/18/2017 07:42:35</publishTime>
+      <publishTime>06/14/2017 19:19:52</publishTime>
     </File>
     <File Include="assets/js/view/demo.shop.js">
       <publishTime>05/02/2017 16:02:01</publishTime>
@@ -9019,6 +9019,63 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="assets/plugins/owl-carousel/owl.transitions.css">
       <publishTime>04/15/2017 08:22:45</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/changelog.txt">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/CONTRIBUTING.md">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/base.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/font.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/mixins.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/resets.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/responsive.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/theme.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/css/variables.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/flexslider.css">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/flexslider.less">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/fonts/flexslider-icon.eot">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/fonts/flexslider-icon.svg">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/fonts/flexslider-icon.ttf">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/fonts/flexslider-icon.woff">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/images/bg_play_pause.png">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/jquery.flexslider-min.js">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/jquery.flexslider.js">
+      <publishTime>04/15/2017 08:22:49</publishTime>
+    </File>
+    <File Include="assets/plugins/slider.flexslider/README.mdown">
+      <publishTime>04/15/2017 08:22:49</publishTime>
     </File>
     <File Include="assets/plugins/slider.revolution.v5/assets/coloredbg.png">
       <publishTime>04/15/2017 08:23:15</publishTime>
@@ -9506,8 +9563,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>02/22/2013 07:43:40</publishTime>
     </File>
+    <File Include="bin/assets/images/luxury_motor_yacht.jpg">
+      <publishTime>05/05/2017 21:04:00</publishTime>
+    </File>
     <File Include="bin/GoFastBoat.com.dll">
-      <publishTime>05/05/2017 22:22:26</publishTime>
+      <publishTime>05/19/2017 20:43:10</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>12/13/2016 02:10:32</publishTime>
@@ -9654,7 +9714,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/05/2017 14:30:37</publishTime>
     </File>
     <File Include="boats/listings.html">
-      <publishTime>05/05/2017 19:12:28</publishTime>
+      <publishTime>06/14/2017 19:11:30</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
       <publishTime>04/18/2017 15:44:48</publishTime>
@@ -9681,7 +9741,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/15/2017 13:49:57</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>05/05/2017 21:18:07</publishTime>
+      <publishTime>05/19/2017 20:39:27</publishTime>
     </File>
     <File Include="js/core/kendoui/kendo.all.min.js">
       <publishTime>04/18/2017 07:35:27</publishTime>

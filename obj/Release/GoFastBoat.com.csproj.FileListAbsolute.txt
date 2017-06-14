@@ -118,3 +118,4 @@ C:\Development\Clients\GoFastBoat.com\WebUI\bin\System.Web.Http.WebHost.xml
 C:\Development\Clients\GoFastBoat.com\WebUI\obj\Release\GoFastBoat.com.csprojResolveAssemblyReference.cache
 C:\Development\Clients\GoFastBoat.com\WebUI\obj\Release\GoFastBoat.com.dll
 C:\Development\Clients\GoFastBoat.com\WebUI\obj\Release\GoFastBoat.com.pdb
+C:\Development\Clients\GoFastBoat.com\WebUI\bin\assets\images\luxury_motor_yacht.jpg

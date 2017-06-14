@@ -77,7 +77,7 @@
 
 		}
 
-		// Reinit on Ajax
+	    // Reinit on Ajax
 		_owl_carousel();
 		_flexslider();
 		_popover();
@@ -760,21 +760,21 @@
 		}
 
 		// Count To
-        jQuery(".countTo").appear(function(){
+		jQuery(".countTo").appear(function(){
 			var _t 					= jQuery(this),
 				_from 				= _t.attr('data-from') 				|| 0,
 				_speed 				= _t.attr('data-speed') 			|| 1300,
 				_refreshInterval 	= _t.attr('data-refreshInterval') 	|| 60;
 				
 
-            _t.countTo({
-                from: 				parseInt(_from),
-                to: 				_t.html(),
-                speed: 				parseInt(_speed),
-                refreshInterval: 	parseInt(_refreshInterval),
-            });
-            
-        });
+			_t.countTo({
+				from: 				parseInt(_from),
+				to: 				_t.html(),
+				speed: 				parseInt(_speed),
+				refreshInterval: 	parseInt(_refreshInterval),
+			});
+			
+		});
 	}
 
 
@@ -1370,9 +1370,9 @@
 					jQuery("ul.mix-filter a").bind("click", function(e) {
 						e.preventDefault();
 					});
-                    jQuery("ul.mix-filter.li.ul a").bind("click", function (e) {
-                        e.preventDefault();
-                    });
+					jQuery("ul.mix-filter.li.ul a").bind("click", function (e) {
+						e.preventDefault();
+					});
 				}
 			
 			});
@@ -2148,9 +2148,9 @@
 
 
 				// Fix margins & Width
-                var postWidth = (_containerWidth/columns);
+				var postWidth = (_containerWidth/columns);
 					postWidth = Math.floor(postWidth);
-                if((postWidth * columns) >= _containerWidth) { 
+				if((postWidth * columns) >= _containerWidth) { 
 					_container.css({ 'margin-right': '-1px' }); 
 				}
 				if(columns < 6) {
@@ -2159,7 +2159,7 @@
 
 
 				// Set Big Image
-                if(parseInt(_bigImageNo) > 0) {
+				if(parseInt(_bigImageNo) > 0) {
 
 					_bigImageNo 	= Number(_bigImageNo) - 1; 
 					_container.find('a:eq('+_bigImageNo+')').css({ width: _firstElemWidth*2 + 'px'});
@@ -2179,7 +2179,7 @@
 					
 					});
 
-                }
+				}
 
 			});
 
@@ -2996,7 +2996,7 @@
 								remote: {
 									url: _qryURL + '%QUERY',
 								},
- 							});
+							});
 
 							jQuery('.typeahead', _t).typeahead({
 								limit: 		_limit,
